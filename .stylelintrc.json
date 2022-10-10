@@ -1,0 +1,7 @@
+{
+    "extends": ["stylelint-config-standard-scss", "stylelint-config-prettier-scss"],
+    "rules": {
+      "no-empty-source": null,
+      "rule-empty-line-before": "always-multi-line"
+    }
+}
