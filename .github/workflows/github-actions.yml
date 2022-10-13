@@ -10,11 +10,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Some task that fetches dependencies
-        env:
-          SSH_AUTH_SOCK: /tmp/ssh_agent.sock
-        run: ./fetch-deps.sh
-
       - name: Node install
         uses: actions/setup-node@v2
         with:
