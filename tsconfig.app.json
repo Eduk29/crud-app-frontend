@@ -3,7 +3,11 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "outDir": "./out-tsc/app",
-    "types": []
+    "types": [],
+    "paths": {
+      "@angular/*": ["./node_modules/@angular/*"],
+      "ems-angular-toolkit/*": ["node_modules/ems-angular-toolkit/*"]
+    }
   },
   "files": [
     "src/main.ts",
