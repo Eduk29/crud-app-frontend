@@ -35,10 +35,15 @@
               "src/assets"
             ],
             "styles": [
-              "node_modules/ems-angular-toolkit/dist/src/app/theme/default-theme.scss",
+              "src/app/theme/default-theme.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.js",
+              "node_modules/popper.js/dist/umd/popper.js",
+              "node_modules/bootstrap/dist/js/bootstrap.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -104,10 +109,13 @@
               "src/assets"
             ],
             "styles": [
-              "node_modules/ems-angular-toolkit/dist/src/app/theme/default-theme.scss",
+              "src/app/theme/default-theme.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": ["node_modules/jquery/dist/jquery.js",
+              "node_modules/popper.js/dist/umd/popper.js",
+              "node_modules/bootstrap/dist/js/bootstrap.js"]
           }
         },
         "lint": {

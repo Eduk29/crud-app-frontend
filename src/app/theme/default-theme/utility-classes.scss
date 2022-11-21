@@ -1,0 +1,136 @@
+@import './mixins';
+
+.emat-primary {
+  &.base {
+    &.background {
+      @include emat-primary('base', 'background');
+    }
+    &.foreground {
+      @include emat-primary('base', 'text');
+    }
+  }
+  &.lighter {
+    &.background {
+      @include emat-primary('lighter', 'background');
+    }
+    &.text {
+      @include emat-primary('lighter', 'text');
+    }
+  }
+  &.darker {
+    &.background {
+      @include emat-primary('darker', 'background');
+    }
+    &.text {
+      @include emat-primary('darker', 'text');
+    }
+  }
+}
+
+.emat-accent {
+  &.base {
+    &.background {
+      @include emat-accent('base', 'background');
+    }
+    &.text {
+      @include emat-accent('base', 'text');
+    }
+  }
+  &.lighter {
+    &.background {
+      @include emat-accent('lighter', 'background');
+    }
+    &.text {
+      @include emat-accent('lighter', 'text');
+    }
+  }
+  &.darker {
+    &.background {
+      @include emat-accent('darker', 'background');
+    }
+    &.text {
+      @include emat-accent('darker', 'text');
+    }
+  }
+}
+
+.emat-warning {
+  &.base {
+    &.background {
+      @include emat-warning('base', 'background');
+    }
+    &.text {
+      @include emat-warning('base', 'text');
+    }
+  }
+  &.lighter {
+    &.background {
+      @include emat-warning('lighter', 'background');
+    }
+    &.text {
+      @include emat-warning('lighter', 'text');
+    }
+  }
+  &.darker {
+    &.background {
+      @include emat-warning('darker', 'background');
+    }
+    &.text {
+      @include emat-warning('darker', 'text');
+    }
+  }
+}
+
+.emat-error {
+  &.base {
+    &.background {
+      @include emat-error('base', 'background');
+    }
+    &.text {
+      @include emat-error('base', 'text');
+    }
+  }
+  &.lighter {
+    &.background {
+      @include emat-error('lighter', 'background');
+    }
+    &.text {
+      @include emat-error('lighter', 'text');
+    }
+  }
+  &.darker {
+    &.background {
+      @include emat-error('darker', 'background');
+    }
+    &.text {
+      @include emat-error('darker', 'foreground');
+    }
+  }
+}
+
+.emat-success {
+  &.base {
+    &.background {
+      @include emat-success('base', 'background');
+    }
+    &.foreground {
+      @include emat-success('base', 'foreground');
+    }
+  }
+  &.lighter {
+    &.background {
+      @include emat-success('lighter', 'background');
+    }
+    &.foreground {
+      @include emat-success('lighter', 'foreground');
+    }
+  }
+  &.darker {
+    &.background {
+      @include emat-success('darker', 'background');
+    }
+    &.foreground {
+      @include emat-success('darker', 'foreground');
+    }
+  }
+}

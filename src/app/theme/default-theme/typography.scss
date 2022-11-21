@@ -1,0 +1,142 @@
+// Font Family declaration
+$app-font-family: 'Roboto, "Helvetica Neue", "Arial", sans-serif';
+
+// Typography Classes
+.app-display-4 {
+  font-size: 96px !important;
+  line-height: normal !important;
+  font-weight: 400 !important;
+  font-family: $app-font-family !important;
+  margin: 0 0 16px !important;
+}
+
+.app-display-3 {
+  font-size: 72px !important;
+  line-height: normal !important;
+  font-weight: 400 !important;
+  font-family: $app-font-family !important;
+  margin: 0 0 16px !important;
+}
+
+.app-display-2 {
+  font-size: 64px !important;
+  line-height: normal !important;
+  font-weight: 400 !important;
+  font-family: $app-font-family !important;
+  margin: 0 0 16px !important;
+}
+
+.app-display-1 {
+  font-size: 56px !important;
+  line-height: normal !important;
+  font-weight: 400 !important;
+  font-family: $app-font-family !important;
+  margin: 0 0 16px !important;
+}
+
+h1,
+.app-h1,
+.app-headline,
+.mat-h1 {
+  font-size: 48px !important;
+  line-height: normal !important;
+  font-weight: 400 !important;
+  font-family: $app-font-family !important;
+  margin: 0 0 16px !important;
+}
+
+h2,
+.app-h2,
+.app-title,
+.mat-h2 {
+  font-size: 42px !important;
+  line-height: normal !important;
+  font-weight: 400 !important;
+  font-family: $app-font-family !important;
+  margin: 0 0 16px !important;
+}
+
+h3,
+.app-h3,
+.app-subheading-2,
+.mat-h3 {
+  font-size: 36px !important;
+  line-height: normal !important;
+  font-weight: 400 !important;
+  font-family: $app-font-family !important;
+  margin: 0 0 16px !important;
+}
+
+h4,
+.app-h4,
+.app-subheading-1,
+.mat-h4 {
+  font-size: 32px !important;
+  line-height: normal !important;
+  font-weight: 400 !important;
+  font-family: $app-font-family !important;
+  margin: 0 0 16px !important;
+}
+
+h5,
+.app-h5,
+.mat-h5 {
+  font-size: 24px !important;
+  line-height: normal !important;
+  font-weight: 400 !important;
+  font-family: $app-font-family !important;
+  margin: 0 0 16px;
+}
+
+h6,
+.app-h6,
+.mat-h6 {
+  font-size: 18px !important;
+  line-height: normal !important;
+  font-weight: 400 !important;
+  font-family: $app-font-family !important;
+  margin: 0 0 16px;
+}
+
+p {
+  &.app-body-1 {
+    font-size: 16px !important;
+    line-height: 24px !important;
+    font-family: $app-font-family !important;
+    margin: 0 0 16px;
+  }
+
+  &.app-body-2 {
+    font-size: 14px !important;
+    line-height: 16px !important;
+    font-family: $app-font-family !important;
+    margin: 0 0 16px;
+  }
+
+  &.app-caption {
+    font-size: 12px !important;
+    line-height: 16px !important;
+    font-family: $app-font-family !important;
+    margin: 0 0 16px;
+  }
+}
+
+.app-fw-thin {
+  @extend .fw-light;
+}
+
+.app-fw-semithin {
+  @extend .fw-normal;
+}
+
+.app-fw-normal {
+  font-weight: 500;
+}
+
+.app-fw-semibold {
+  @extend .fw-semibold;
+}
+
+.app-fw-bold {
+  @extend .fw-bold;
+}
