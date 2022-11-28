@@ -26,13 +26,13 @@ describe('HomeComponent', () => {
   });
 
   it('Home Component SHOULD call person list function WHEN component start', () => {
-    spyOn<any>(component, 'getAllPersons');
+    spyOn<any>(component, 'getAllPersons').and.returnValue(of([]));
     component.ngOnInit();
     expect(component['getAllPersons']).toHaveBeenCalled();
   });
 
   it('Person List SHOULD call service WHEN load person list', () => {
-    spyOn(service, 'getAll').and.callThrough();
+    spyOn(service, 'getAll').and.returnValue(of([]));
     component['getAllPersons']();
 
     expect(service['getAll']).toHaveBeenCalled();
