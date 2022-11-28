@@ -1,1 +1,33 @@
-<p>data-table works!</p>
+<table
+  *ngIf="displayTable"
+  mat-table
+  [dataSource]="dataSource"
+  class="mat-elevation-z8 w-100">
+  <div *ngFor="let column of columnsDefinitions">
+    <ng-container
+      *ngIf="!isActionColumn(column.columnDefinition)"
+      [matColumnDef]="column.columnDefinition">
+      <th mat-header-cell *matHeaderCellDef>{{ column.label }}</th>
+      <td mat-cell *matCellDef="let element">
+        <span *ngIf="!isDateData(element[column.columnDefinition])">{{
+          element[column.columnDefinition]
+        }}</span>
+        <span *ngIf="!!isDateData(element[column.columnDefinition])">{{
+          element[column.columnDefinition] | date: 'dd-MM-YYYY'
+        }}</span>
+      </td>
+    </ng-container>
+
+    <ng-container
+      *ngIf="isActionColumn(column.columnDefinition)"
+      [matColumnDef]="column.columnDefinition">
+      <th mat-header-cell *matHeaderCellDef>{{ column.label }}</th>
+      <td mat-cell *matCellDef="let element">
+        <crud-app-table-actions [person]="element"> </crud-app-table-actions>
+      </td>
+    </ng-container>
+  </div>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+</table>

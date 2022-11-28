@@ -11,7 +11,7 @@ $success-palette-palette: map.get($color-config, 'success');
 $greyscale-palette-palette: map.get($color-config, 'greyscale');
 
 // Font Family
-$emat-font-family: 'Roboto, "Helvetica Neue", sans-serif';
+$font-family: 'Roboto, "Helvetica Neue", sans-serif';
 
 // Colors Variables
 // Primary
@@ -99,6 +99,8 @@ $success-darker-contrast: mat.get-color-from-palette(
   $success-color-palette,
   darker-contrast
 );
+
+$icon: mat.get-color-from-palette($greyscale-color-palette, 500);
 
 // Black and White
 $white: mat.get-color-from-palette($greyscale-color-palette, 50);

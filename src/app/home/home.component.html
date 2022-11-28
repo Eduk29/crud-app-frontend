@@ -1,1 +1,9 @@
-<p>home works!</p>
+<section class="container">
+  <div class="row justify-content-center py-4">
+    <crud-app-data-table
+      [dataSource]="personList"
+      [columnsDefinitions]="personTableDefinitions"
+      class="col-10">
+    </crud-app-data-table>
+  </div>
+</section>

@@ -1,136 +1,140 @@
 @import './mixins';
 
-.emat-primary {
+.primary {
   &.base {
     &.background {
-      @include emat-primary('base', 'background');
+      @include primary-color('base', 'background');
     }
     &.foreground {
-      @include emat-primary('base', 'text');
+      @include primary-color('base', 'text');
     }
   }
   &.lighter {
     &.background {
-      @include emat-primary('lighter', 'background');
+      @include primary-color('lighter', 'background');
     }
     &.text {
-      @include emat-primary('lighter', 'text');
+      @include primary-color('lighter', 'text');
     }
   }
   &.darker {
     &.background {
-      @include emat-primary('darker', 'background');
+      @include primary-color('darker', 'background');
     }
     &.text {
-      @include emat-primary('darker', 'text');
+      @include primary-color('darker', 'text');
     }
   }
 }
 
-.emat-accent {
+.accent {
   &.base {
     &.background {
-      @include emat-accent('base', 'background');
+      @include accent-color('base', 'background');
     }
     &.text {
-      @include emat-accent('base', 'text');
+      @include accent-color('base', 'text');
     }
   }
   &.lighter {
     &.background {
-      @include emat-accent('lighter', 'background');
+      @include accent-color('lighter', 'background');
     }
     &.text {
-      @include emat-accent('lighter', 'text');
+      @include accent-color('lighter', 'text');
     }
   }
   &.darker {
     &.background {
-      @include emat-accent('darker', 'background');
+      @include accent-color('darker', 'background');
     }
     &.text {
-      @include emat-accent('darker', 'text');
+      @include accent-color('darker', 'text');
     }
   }
 }
 
-.emat-warning {
+.warning {
   &.base {
     &.background {
-      @include emat-warning('base', 'background');
+      @include warning-color('base', 'background');
     }
     &.text {
-      @include emat-warning('base', 'text');
+      @include warning-color('base', 'text');
     }
   }
   &.lighter {
     &.background {
-      @include emat-warning('lighter', 'background');
+      @include warning-color('lighter', 'background');
     }
     &.text {
-      @include emat-warning('lighter', 'text');
+      @include warning-color('lighter', 'text');
     }
   }
   &.darker {
     &.background {
-      @include emat-warning('darker', 'background');
+      @include warning-color('darker', 'background');
     }
     &.text {
-      @include emat-warning('darker', 'text');
+      @include warning-color('darker', 'text');
     }
   }
 }
 
-.emat-error {
+.error {
   &.base {
     &.background {
-      @include emat-error('base', 'background');
+      @include error-color('base', 'background');
     }
     &.text {
-      @include emat-error('base', 'text');
+      @include error-color('base', 'text');
     }
   }
   &.lighter {
     &.background {
-      @include emat-error('lighter', 'background');
+      @include error-color('lighter', 'background');
     }
     &.text {
-      @include emat-error('lighter', 'text');
+      @include error-color('lighter', 'text');
     }
   }
   &.darker {
     &.background {
-      @include emat-error('darker', 'background');
+      @include error-color('darker', 'background');
     }
     &.text {
-      @include emat-error('darker', 'foreground');
+      @include error-color('darker', 'foreground');
     }
   }
 }
 
-.emat-success {
+.success {
   &.base {
     &.background {
-      @include emat-success('base', 'background');
+      @include success-color('base', 'background');
     }
     &.foreground {
-      @include emat-success('base', 'foreground');
+      @include success-color('base', 'foreground');
     }
   }
   &.lighter {
     &.background {
-      @include emat-success('lighter', 'background');
+      @include success-color('lighter', 'background');
     }
     &.foreground {
-      @include emat-success('lighter', 'foreground');
+      @include success-color('lighter', 'foreground');
     }
   }
   &.darker {
     &.background {
-      @include emat-success('darker', 'background');
+      @include success-color('darker', 'background');
     }
     &.foreground {
-      @include emat-success('darker', 'foreground');
+      @include success-color('darker', 'foreground');
     }
   }
+}
+
+.icon-color {
+  color: $icon;
 }

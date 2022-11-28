@@ -1,6 +1,6 @@
 @import './variables';
 
-@mixin emat-primary($hue, $mode) {
+@mixin primary-color($hue, $mode) {
   @if ($hue == 'base' and $mode == 'background') {
     background-color: $primary-base;
     color: $primary-base-contrast;
@@ -24,7 +24,7 @@
   }
 }
 
-@mixin emat-accent($hue, $mode) {
+@mixin accent-color($hue, $mode) {
   @if ($hue == 'base' and $mode == 'background') {
     background-color: $accent-base;
     color: $accent-base-contrast;
@@ -48,7 +48,7 @@
   }
 }
 
-@mixin emat-warning($hue, $mode) {
+@mixin warning-color($hue, $mode) {
   @if ($hue == 'base' and $mode == 'background') {
     background-color: $warning-base;
     color: $warning-base-contrast;
@@ -72,7 +72,7 @@
   }
 }
 
-@mixin emat-error($hue, $mode) {
+@mixin error-color($hue, $mode) {
   @if ($hue == 'base' and $mode == 'background') {
     background-color: $error-base;
     color: $error-base-contrast;
@@ -96,7 +96,7 @@
   }
 }
 
-@mixin emat-success($hue, $mode) {
+@mixin success-color($hue, $mode) {
   @if ($hue == 'base' and $mode == 'background') {
     background-color: $success-base;
     color: $success-base-contrast;

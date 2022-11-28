@@ -6,6 +6,7 @@
       "scss/at-rule-conditional-no-parentheses": null,
       "rule-empty-line-before": null,
       "color-hex-length": null,
-      "scss/at-extend-no-missing-placeholder": null
+      "scss/at-extend-no-missing-placeholder": null,
+      "scss/dollar-variable-empty-line-before": null
     }
 }
