@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="row my-3">
+    <div class="col">
+      <crud-app-breadcrumb
+        [breadcrumbs]="editionBreadcrumbs"></crud-app-breadcrumb>
+    </div>
+  </div>
+  <div class="row mx-0 my-3">
+    <mat-card class="col">
+      <h2>Person Edition</h2>
+      <hr class="w-40" />
+      <crud-app-person-form
+        formType="EDITION"
+        [person]="person"
+        (formSubmitEventEmitter)="
+          formSubmitEvent($event)
+        "></crud-app-person-form>
+    </mat-card>
+  </div>
+  <div class="row my-3">
+    <crud-app-page-buttons></crud-app-page-buttons>
+  </div>
+</div>

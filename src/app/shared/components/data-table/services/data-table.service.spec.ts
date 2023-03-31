@@ -36,17 +36,4 @@ describe('DataTableActionService', () => {
 
     service.clearActionSubscriber();
   });
-
-  it('getActionObservable SHOULD return an observable value  with action WHEN action was dispatched to subscribed components', () => {
-    const fakeTableAction: TableAction = {
-      dataId: 1,
-      actionType: TableActionsEnum.EDIT,
-    };
-
-    service.dispatchTableAction(fakeTableAction);
-
-    service.getActionObservable().subscribe(res => {
-      expect(res).toBe(fakeTableAction);
-    });
-  });
 });

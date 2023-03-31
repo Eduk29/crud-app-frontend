@@ -138,3 +138,21 @@
 .icon-color {
   color: $icon;
 }
+
+.white {
+  &.background {
+    background-color: $white;
+  }
+  &.foreground {
+    color: $white;
+  }
+}
+
+.black {
+  &.background {
+    background-color: $black;
+  }
+  &.foreground {
+    color: $black;
+  }
+}

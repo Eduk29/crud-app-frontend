@@ -1,0 +1,9 @@
+<div class="w-100">
+  <p class="m-0">{{ label }}</p>
+</div>
+<div *ngIf="!!isTextData">
+  <h6>{{ data }}</h6>
+</div>
+<div *ngIf="!!isDateData">
+  <h6>{{ data | date: 'dd/MM/YYYY' }}</h6>
+</div>

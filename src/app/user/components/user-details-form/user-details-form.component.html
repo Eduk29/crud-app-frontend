@@ -1,0 +1,16 @@
+<div *ngIf="displayTitle">
+  <h4>User Details</h4>
+  <hr class="w-25" />
+</div>
+<div class="row">
+  <crud-app-data-display
+    label="Username"
+    [data]="user?.username"
+    dataType="text"
+    class="col-4"></crud-app-data-display>
+  <crud-app-data-display
+    label="Password"
+    [data]="user?.password"
+    dataType="text"
+    class="col-4"></crud-app-data-display>
+</div>

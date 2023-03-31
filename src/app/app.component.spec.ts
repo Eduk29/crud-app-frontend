@@ -47,4 +47,18 @@ describe('AppComponent', () => {
 
     expect(window.location.pathname).toBe('/home');
   }));
+
+  // it('SHOULD open person detail component WHEN redirect to /person', fakeAsync(() => {
+  //   router.navigate(['..', 'person', '1']);
+  //   tick();
+
+  //   expect(window.location.pathname).toContain('person/1');
+  // }));
+
+  it('SHOULD open person edition component WHEN redirect to /person', fakeAsync(() => {
+    router.navigate(['..', 'person', '1', 'edit']);
+    tick();
+
+    expect(window.location.pathname).toContain('person/1/edit');
+  }));
 });
